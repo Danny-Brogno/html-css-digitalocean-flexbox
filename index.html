@@ -3,27 +3,96 @@
   <head>
     <meta charset="utf-8">
     <title>FLEXBOX EXERCISE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header>
 
-      <nav class="container70">
+      <nav class="container70 navigation-danny">
 
         <div id="header-one">
-          <!-- <img src="img/logo.png" alt=""> -->
+          <img src="img/logo.png" alt="">
         </div>
 
         <div class="header-two">
+
+          <ul>
+
+            <li>
+              <a href="#">
+                <span>LINK 4</span>
+              </a>
+            </li>
+
+            <li class="db-test1">
+              <a href="#">
+                <span>LINK 1</span>
+              </a>
+            </li>
+
+            <li class="db-test1">
+              <a href="#">
+                <span>LINK 2</span>
+              </a>
+            </li>
+
+            <li class="db-test1">
+              <a href="#">
+                <span>LINK 3</span>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
 
         <div class="header-three">
+
+          <ul>
+
+            <!-- ALL THESE ARE SCRAMBLED IN HTML: FIXES WITH "ORDER" IN CSS -->
+
+            <li id="db-test2">
+              <a href="#">
+                <span>LINK 3</span>
+              </a>
+            </li>
+
+            <li id="db-test3">
+              <a href="#">
+                <span>LINK 2</span>
+              </a>
+            </li>
+
+            <li id="db-test4">
+              <a href="#">
+                <span>LINK 1</span>
+              </a>
+            </li>
+
+            <li id="db-test5">
+              <a href="#">
+                <span class="reusable">CLICK ME!!!</span>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
 
-      </nav>
+        <section><!-- HAMBURGER SECTION START-->
 
-    </header>
+          <div id="db-hamburger">
+            <a href="#">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+
+        </section><!-- HAMBURGER SECTION END -->
+      </nav><!-- END OF NAVBAR -->
+    </header><!-- END OF HEADER -->
 
   </body>
 </html>
