@@ -127,6 +127,7 @@ header li {
 }
 
 #db-hamburger {
+  display: inline-block;
   margin-right: 2px;
   font-size: 50px;
   color: #FFFFFF;
@@ -138,6 +139,9 @@ header li {
   color: #FFFFFF;
 }
 
+#db-hamburger .fas.fa-bars {
+  display: inline;
+}
 
 
 
@@ -150,12 +154,21 @@ header li {
 
 @media all and (max-width: 767px) {
 
+  #header-one {
+    display: flex;
+    align-self: flex-start;
+  }
   .header-two {
     display: none;
   }
 
   .header-three ul {
     display: none;
+  }
+
+  #db-hamburger {
+    display: flex;
+    justify-content: flex-end;
   }
 
 }
@@ -168,6 +181,11 @@ header li {
 
   .header-three ul {
     display: none;
+  }
+
+  #db-hamburger {
+    display: flex;
+    justify-content: flex-end;
   }
 
 }
