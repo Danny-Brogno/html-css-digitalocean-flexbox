@@ -7,7 +7,7 @@
 }
 
 body {
-  /* OCCHI STANCHI */
+  /* debug OCCHI STANCHI */
   background-color: #000;
 }
 
@@ -95,7 +95,7 @@ header li {
 
 .header-three {
   display: flex;
-  width: 380px;
+  width: 320px;
   height: 70px;
   /* TEST: NON USARE "LINE-HEIGHT: 70px" MA FLEX */
   justify-content: center;
@@ -131,6 +131,7 @@ header li {
   margin-right: 2px;
   font-size: 50px;
   color: #FFFFFF;
+  border: 1px solid transparent;
 }
 
 #db-hamburger:visited,
@@ -139,8 +140,91 @@ header li {
   color: #FFFFFF;
 }
 
-#db-hamburger .fas.fa-bars {
-  display: inline;
+/* -------------------------------JUMBOTRON---------------------------------- */
+
+.jumbotron {
+  width: 100%;
+  height: 500px;
+  /* debug */
+  background-color: blue;
+}
+
+.navigation-brogno {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+/* --------------------------JUMBO SECTION ONE------------------------------- */
+
+.jumbo1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 48%;
+  /* debug */
+  background-color: navy;
+}
+
+.text1-jumbo1 {
+  display: flex;
+  width: 100%;
+  /* debug */
+  background-color: lightblue;
+}
+
+/* QUESTO E' INUTILE MA VOLEVO USARE ALIGN SELF */
+.text1-jumbo1 > h1 {
+  align-self: flex-start;
+  line-height: 200%;
+  font-size: 28px;
+  color: red;
+  background-color: black;
+}
+
+
+.text2-jumbo1 > p {
+  align-items: center;
+  width: 100%;
+  font-size: 21px;
+  line-height: 1.6;
+  /* debug */
+  color: black;
+  background-color: red;
+}
+
+/* ----------------------------JUMBO SECTION TWO----------------------------- */
+
+.jumbo2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 48%;
+  /* debug */
+  background-color: navy;
+}
+
+.jumbo2 input {
+  width: 70%;
+  padding: 10px 0px 10px 0px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  margin: 0px 0px 20px 0px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.db-input {
+  text-align: center;
+}
+.db-underlined #terms-service {
+  text-decoration: underline;
+}
+
+.db-random {
+  padding-top: 20px;
 }
 
 
@@ -151,27 +235,37 @@ header li {
 
 
 
+/* ---------------------------------SMALL------------------------------------ */
 
 @media all and (max-width: 767px) {
 
-  #header-one {
-    display: flex;
-    align-self: flex-start;
-  }
   .header-two {
     display: none;
+  }
+
+  .header-three {
+    justify-content: flex-end;
   }
 
   .header-three ul {
     display: none;
   }
 
-  #db-hamburger {
-    display: flex;
-    justify-content: flex-end;
+  .header-three {
+    flex-flow: nowrap;
+    margin-right: 2px;
+    width: 20px;
+    padding-top: 42px;
   }
 
+  header .container70 {
+    width: 100%;
+  }
+
+
 }
+
+/* ---------------------------------MEDIUM----------------------------------- */
 
 @media all and (min-width: 768px) and (max-width: 991px) {
 
@@ -179,18 +273,52 @@ header li {
     display: none;
   }
 
+  .header-three {
+    justify-content: flex-end;
+  }
+
   .header-three ul {
     display: none;
   }
 
-  #db-hamburger {
-    display: flex;
-    justify-content: flex-end;
+  .header-three {
+    flex-flow: nowrap;
+    margin-right: 2px;
+    width: 20px;
+    padding-top: 42px;
+  }
+
+  header .container70 {
+    width: 100%;
   }
 
 }
 
-@media all and (min-width: 992px) {
+/* --------------------------------LARGE------------------------------------ */
+
+@media all and (min-width: 992px) and (max-width: 1585px) {
+
+  .header-two {
+    display: none;
+  }
+
+  .header-three {
+    flex-flow: nowrap;
+    margin-right: 2px;
+    justify-content: flex-end;
+    width: 20px;
+    padding-top: 42px;
+  }
+
+.header-three ul {
+    display: none;
+  }
+
+}
+
+/* ----------------------------EXTRA LARGE---------------------------------- */
+
+@media all and (min-width: 1586px) {
 
   #db-hamburger {
     display: none;
